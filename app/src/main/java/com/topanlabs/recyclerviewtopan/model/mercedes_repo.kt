@@ -1,5 +1,7 @@
 package com.topanlabs.recyclerviewtopan.model
 
+import com.topanlabs.recyclerviewtopan.R
+
 object MercedesData {
     private val mobilNames = listOf(
         "GLA SUV", "GLB SUV", "GLC SUV",
@@ -37,7 +39,7 @@ object MercedesData {
     )
 
     private val tagline = listOf(
-        "A true premium compact SUV with dramatic styling.", "An ideal blend of space, capability, technology and comfort.", "It's more than a new name. It's the next generation of the SUV.",
+        "A true premium compact", "An ideal blend of space, capability, technology and comfort.", "It's more than a new name. It's the next generation of the SUV.",
         "An entirely new class of Mercedes-Benz that sets a new standard for small sedans.", "A stylish performer that embodies sophistication and intelligence.", "Distinctive styling, class-leading safety and trailblazing technology.",
         "An entirely new seductive style at an even more irresistible price.", "Bold styling, sporty performance and competitive spirit in two doors.", "An alluring silhouette, with the performance and amenities to match.",
         "A powerful expression of individuality in a visionary four-door coupe."
@@ -50,6 +52,9 @@ object MercedesData {
         70300
     )
 
+    private val images = listOf(
+        R.drawable.gla
+    )
     val listData: ArrayList<MercedesCar>
     get() {
         val list = arrayListOf<MercedesCar>()
@@ -62,6 +67,7 @@ object MercedesData {
             merc.power = power[pos]
             merc.tagline = tagline[pos]
             merc.torque = torque[pos]
+            merc.photo = R.drawable.gla
             list.add(merc)
         }
         return list

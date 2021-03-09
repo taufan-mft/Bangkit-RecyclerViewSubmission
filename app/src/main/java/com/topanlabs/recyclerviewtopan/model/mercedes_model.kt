@@ -1,5 +1,7 @@
 package com.topanlabs.recyclerviewtopan.model
 
+import java.io.Serializable
+
 data class MercedesCar (
     var name: String = "",
     var photo: Int = 0,
@@ -11,4 +13,4 @@ data class MercedesCar (
     var tagline: String = "",
     var harga: Int = 0
 
-)
+) : Serializable
