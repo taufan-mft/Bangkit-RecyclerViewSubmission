@@ -14,7 +14,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
+            <com.like.LikeButton
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon_size="8dp"
+                android:padding="8dp"
+                app:is_enabled="false"
+                android:layout_gravity="right"
+                app:icon_type="heart" />
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
@@ -141,7 +149,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/tvEngine"
+                        android:id="@+id/tvTorque"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"

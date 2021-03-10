@@ -11,6 +11,7 @@ data class MercedesCar (
     //var color : List<String> = listOf(),
     var engine: String="",
     var tagline: String = "",
-    var harga: Int = 0
+    var harga: Int = 0,
+    var liked: Boolean = false
 
 ) : Serializable

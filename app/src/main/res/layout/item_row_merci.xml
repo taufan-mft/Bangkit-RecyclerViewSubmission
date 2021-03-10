@@ -5,6 +5,9 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
+    android:id="@+id/conslayout"
+    android:clickable="true"
+    android:background="@drawable/ripple_effect"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:padding="16dp">

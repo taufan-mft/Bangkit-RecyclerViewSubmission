@@ -53,7 +53,16 @@ object MercedesData {
     )
 
     private val images = listOf(
-        R.drawable.gla
+        R.drawable.gla,
+            R.drawable.glb,
+            R.drawable.glc,
+            R.drawable.ased,
+            R.drawable.csed,
+            R.drawable.esed,
+            R.drawable.cla,
+            R.drawable.ccou,
+            R.drawable.ecou,
+            R.drawable.clscoup
     )
     val listData: ArrayList<MercedesCar>
     get() {
